@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="330dp"
+        android:background="#1c2243"
+        android:layout_height="110dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tjyy_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"  />
+        <TextView
+            android:id="@+id/tjyy_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tjyy_image"
+            android:textSize="12sp"
+            android:layout_alignTop="@id/tjyy_image"
+            android:textColor="#ffffff"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tjyy_price"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tjyy_image"
+            android:layout_below="@id/tjyy_name"
+            android:textSize="13sp"
+            android:textColor="#deffffff"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

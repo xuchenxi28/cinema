@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#141931"
+    android:paddingBottom="42dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/film_img"
+        android:layout_width="44dp"
+        app:roundAsCircle="true"
+        android:layout_height="44dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/film_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/film_img"
+        android:text="123132"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/filmReview_ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_name"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#fff"
+        android:progressTint="#e8185e" />
+
+    <TextView
+        android:id="@+id/film_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/filmReview_ratingBar"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/film_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="27dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/film_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_img"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/film_num"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/film_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/dianzan" />
+
+    <TextView
+        android:id="@+id/film_num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/film_num"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/film_replyNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_content"
+        android:layout_marginLeft="246dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/film_num_text"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

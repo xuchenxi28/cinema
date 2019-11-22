@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".fragment.HaiDianFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dp_dprecy"
+        android:layout_width="100dp"
+        android:background="#1c2243"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="178dp"
+        android:id="@+id/dp_yingyuan"
+        android:layout_marginLeft="1dp"
+        android:background="#1c2243"
+        android:layout_height="match_parent"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

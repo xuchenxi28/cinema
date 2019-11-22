@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="118dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_height="140dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            app:roundedCornerRadius="5dp"
+            app:actualImageScaleType="centerCrop"
+            android:id="@+id/movieactor_photo"
+            android:layout_width="98dp"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:id="@+id/movieactor_name"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+</LinearLayout>

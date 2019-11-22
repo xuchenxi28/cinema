@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="138dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/mybianjiao">
+        <TextView
+            android:id="@+id/recy2_text1"
+            android:text="555"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/recy2_text2"
+            android:text="555"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/recy2_text1"
+            android:layout_marginLeft="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/recy2_text3"
+            android:text="555"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_below="@id/recy2_text2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/recy2_but"
+            android:layout_width="50dp"
+            android:text="预约"
+            android:textColor="#ffffff"
+            android:background="@drawable/but"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="170dp"
+            android:layout_toRightOf="@id/recy2_text3"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/recy2_image"
+        android:layout_width="108dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        fresco:roundedCornerRadius="5dp"
+        fresco:actualImageScaleType="centerCrop"
+        >
+    </com.facebook.drawee.view.SimpleDraweeView>
+
+
+</RelativeLayout>
